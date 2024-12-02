@@ -1,0 +1,7 @@
+@use "sass:math";
+
+// px -> rem
+@function rem($v) {
+
+	@return #{strip-unit(math.div($v, $base-size-px))} + rem;
+}

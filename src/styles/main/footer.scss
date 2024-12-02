@@ -1,0 +1,32 @@
+.footer{
+    padding: 13px 7px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 5;
+    .container{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        font-size: 20px;
+        color: rgba($color: #fff, $alpha: .5);
+        font-weight: 500;
+        font-family: 'Montserrat';
+        gap: 15px;
+    }
+    &.alternate{
+        .container{
+            flex-direction: row-reverse;
+        }
+        .footer__text{
+            text-align: left;
+        }
+    }
+}
+.copyright{
+    margin-top: 15px;
+}
+.footer__text{
+    text-align: right;
+}
