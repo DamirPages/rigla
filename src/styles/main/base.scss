@@ -415,8 +415,8 @@ img{
     }
     &__list{
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        column-gap: 45px;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 40px;
         row-gap: 15px;
         font-size: 17px;
         color: #fff;
@@ -424,6 +424,10 @@ img{
         overflow-y: auto;
         overflow-x: hidden;
         &::-webkit-scrollbar { width: 0; }
+
+        .winner{
+            width: 280px;
+        }
     }
 }
 

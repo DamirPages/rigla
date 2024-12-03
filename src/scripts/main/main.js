@@ -66,6 +66,7 @@ window.addWinner = (arrayCodes, containerId, randomTime = 2000, intervalTime = 2
 			winner.classList.add('winner');
 			winner.textContent = nameAndTel;
 			winnersList.appendChild(winner);
+			scrollBlock(containerId);
 		}
 	}, randomTime);
 
@@ -77,3 +78,10 @@ window.addWinner = (arrayCodes, containerId, randomTime = 2000, intervalTime = 2
 		}
 	}, randomTime + intervalTime);
 };
+
+
+function scrollBlock(containerId) {
+	const container = document.querySelector(containerId);
+	const winnerList = container.querySelector('.winners__list');
+	winnerList.scrollTo(0, winnerList.scrollHeight);
+}
