@@ -421,8 +421,7 @@ img{
         font-size: 17px;
         color: #fff;
         max-height: 420px;
-        overflow-y: auto;
-        overflow-x: hidden;
+        overflow: hidden;
         &::-webkit-scrollbar { width: 0; }
 
         .winner{
